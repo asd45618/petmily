@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_findani"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:onClick="find_animal"
+        android:text="동물찾기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_findshel"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:onClick="find_shelter"
+        android:text="동물등록대행업체 찾기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_findani" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Home"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_make_fliers"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:onClick="make_fliers"
+        android:text="자체 공고문 만들기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_findshel" />
+
+    <Button
+        android:id="@+id/btn_see_fliers"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:onClick="see_fliers"
+        android:text="공고문 보기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_make_fliers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
